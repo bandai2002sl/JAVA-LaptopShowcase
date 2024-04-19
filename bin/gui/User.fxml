@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1182.0" style="-fx-background-color: #14242B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
+   <children>
+       <Pane prefHeight="742.0" prefWidth="1213.0">
+         <children>
+            <Label alignment="CENTER" layoutX="488.0" layoutY="14.0" prefHeight="82.0" prefWidth="206.0" text="Quản lý danh mục" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="19.0" layoutY="371.0" onMouseClicked="#onClickRow" prefHeight="352.0" prefWidth="1136.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="ID" />
+                <TableColumn prefWidth="181.0" text="Họ tên" />
+                  <TableColumn minWidth="0.0" prefWidth="162.0" text="User name" />
+                  <TableColumn prefWidth="175.0" text="Email" />
+                  <TableColumn prefWidth="203.0" text="SĐT" />
+                  <TableColumn prefWidth="240.0" text="Địa chỉ" />
+                  <TableColumn prefWidth="99.0" text="Vai trò" />
+              </columns>
+            </TableView>
+            <Label layoutX="41.0" layoutY="118.0" prefHeight="41.0" prefWidth="137.0" text="ID" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="178.0" prefHeight="41.0" prefWidth="137.0" text="User name" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="239.0" prefHeight="41.0" prefWidth="137.0" text="Password" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="304.0" prefHeight="41.0" prefWidth="137.0" text="Email" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="909.0" layoutY="162.0" mnemonicParsing="false" onAction="#onClickAddButton" prefHeight="49.0" prefWidth="118.0" text="Thêm" />
+            <Button fx:id="btnUpdate" layoutX="909.0" layoutY="235.0" mnemonicParsing="false" onAction="#onClickUpdateButton" prefHeight="49.0" prefWidth="118.0" text="Sửa" />
+            <Button fx:id="btnDelete" layoutX="1037.0" layoutY="162.0" mnemonicParsing="false" onAction="#onClickDeleteButton" prefHeight="49.0" prefWidth="118.0" text="Xóa" />
+            <Label layoutX="909.0" layoutY="103.0" prefHeight="49.0" prefWidth="206.0" text="Chức năng" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idTF" layoutX="178.0" layoutY="127.0" />
+            <TextField fx:id="usernameTF" layoutX="178.0" layoutY="186.0" />
+            <TextField fx:id="passwordTF" layoutX="178.0" layoutY="247.0" />
+            <TextField fx:id="emailTF" layoutX="178.0" layoutY="312.0" />
+            <Label layoutX="450.0" layoutY="118.0" prefHeight="41.0" prefWidth="137.0" text="Họ tên" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTF" layoutX="568.0" layoutY="123.0" />
+            <Label layoutX="450.0" layoutY="178.0" prefHeight="41.0" prefWidth="118.0" text="Số điên thoại" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneTF" layoutX="568.0" layoutY="186.0" />
+            <Label layoutX="450.0" layoutY="307.0" prefHeight="41.0" prefWidth="118.0" text="Phân quyền" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="450.0" layoutY="242.0" prefHeight="41.0" prefWidth="137.0" text="Địa chỉ" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressTF" layoutX="568.0" layoutY="247.0" />
+            <ComboBox fx:id="roleCB" layoutX="568.0" layoutY="309.0" prefHeight="31.0" prefWidth="186.0" promptText="Chọn" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

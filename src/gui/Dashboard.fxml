@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="742.0" prefWidth="1182.0">
+         <left>
+            <VBox prefHeight="650.0" prefWidth="230.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="230.0" style="-fx-border-color: white; -fx-border-width: 1px;">
+                     <children>
+                        <Label fx:id="usernameTF" layoutX="1.0" layoutY="14.0" prefHeight="36.0" prefWidth="230.0" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="roleTF" layoutX="1.0" layoutY="50.0" prefHeight="32.0" prefWidth="229.0" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button mnemonicParsing="false" onMouseClicked="#homeClick" prefHeight="58.0" prefWidth="241.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#categoryClick" prefHeight="58.0" prefWidth="233.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Quản lý danh mục" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#userClick" prefHeight="58.0" prefWidth="240.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Quản lý user" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#productClick" prefHeight="58.0" prefWidth="271.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Quản lý sản phẩm" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#logoutClick" prefHeight="58.0" prefWidth="271.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="ap" prefHeight="742.0" prefWidth="1182.0" style="-fx-background-color: #14242B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="742.0" prefWidth="1182.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

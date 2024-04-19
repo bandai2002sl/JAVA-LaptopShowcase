@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1182.0" style="-fx-background-color: #14242B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProductController">
+   <children>
+       <Pane prefHeight="742.0" prefWidth="1213.0">
+         <children>
+            <Label alignment="CENTER" layoutX="488.0" layoutY="14.0" prefHeight="82.0" prefWidth="206.0" text="Quản lý sản phẩm" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="19.0" layoutY="371.0" onMouseClicked="#onClickRow" prefHeight="352.0" prefWidth="1136.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="ID" />
+                <TableColumn prefWidth="482.0" text="Tên" />
+                  <TableColumn prefWidth="82.0" text="Số lượng" />
+                  <TableColumn prefWidth="189.0" text="Giá nhập" />
+                  <TableColumn prefWidth="153.0" text="Giá bán" />
+                  <TableColumn minWidth="0.0" prefWidth="154.0" text="Danh mục" />
+              </columns>
+            </TableView>
+            <Label layoutX="41.0" layoutY="118.0" prefHeight="41.0" prefWidth="137.0" text="ID" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="178.0" prefHeight="41.0" prefWidth="137.0" text="Tên sản phẩm" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="239.0" prefHeight="41.0" prefWidth="137.0" text="Số lượng" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="304.0" prefHeight="41.0" prefWidth="137.0" text="Giá nhập" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="888.0" layoutY="174.0" mnemonicParsing="false" onAction="#onClickAddButton" prefHeight="49.0" prefWidth="118.0" text="Thêm" />
+            <Button fx:id="btnUpdate" layoutX="888.0" layoutY="256.0" mnemonicParsing="false" onAction="#onClickUpdateButton" prefHeight="49.0" prefWidth="118.0" text="Sửa" />
+            <Button fx:id="btnDelete" layoutX="1028.0" layoutY="174.0" mnemonicParsing="false" onAction="#onClickDeleteButton" prefHeight="49.0" prefWidth="118.0" text="Xóa" />
+            <Label layoutX="907.0" layoutY="114.0" prefHeight="49.0" prefWidth="199.0" text="Chức năng" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTF" layoutX="178.0" layoutY="186.0" />
+            <TextField fx:id="amountTF" layoutX="178.0" layoutY="247.0" />
+            <TextField fx:id="originPriceTF" layoutX="178.0" layoutY="312.0" />
+            <Label layoutX="362.0" layoutY="118.0" prefHeight="41.0" prefWidth="137.0" text="Giá bán" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salePriceTF" layoutX="450.0" layoutY="126.0" prefHeight="25.0" prefWidth="137.0" />
+            <TextField fx:id="cardTF" layoutX="709.0" layoutY="244.0" />
+            <Label layoutX="646.0" layoutY="119.0" prefHeight="41.0" prefWidth="137.0" text="Thông tin máy" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="626.0" layoutY="166.0" prefHeight="41.0" prefWidth="39.0" text="Cpu" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="622.0" layoutY="203.0" prefHeight="41.0" prefWidth="70.0" text="Ram" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cpuTF" layoutX="709.0" layoutY="174.0" />
+            <TextField fx:id="ramTF" layoutX="709.0" layoutY="207.0" />
+            <TextField fx:id="screenTF" layoutX="709.0" layoutY="280.0" />
+            <TextField fx:id="osTF" layoutX="709.0" layoutY="312.0" />
+            <Label layoutX="622.0" layoutY="236.0" prefHeight="41.0" prefWidth="88.0" text="Card MH" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="622.0" layoutY="272.0" prefHeight="41.0" prefWidth="88.0" text="Màn hình" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="626.0" layoutY="311.0" prefHeight="25.0" prefWidth="88.0" text="Os" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="350.0" layoutY="179.0" prefHeight="41.0" prefWidth="88.0" text="Danh mục" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="categoryCB" layoutX="450.0" layoutY="187.0" prefHeight="25.0" prefWidth="137.0" />
+            <Button fx:id="btnImg" layoutX="350.0" layoutY="247.0" mnemonicParsing="false" onAction="#onClickImgButton" prefHeight="25.0" prefWidth="88.0" text="Chọn ảnh" />
+            <ImageView fx:id="previewImg" fitHeight="137.0" fitWidth="137.0" layoutX="450.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="idTF" disable="true" layoutX="178.0" layoutY="126.0" prefHeight="34.0" prefWidth="149.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.backgroundLogin{
+    -fx-background-color: linear-gradient(to right,#61D8DE, #E839F6);
+}
+.backgroundForm{
+	-fx-background-color: white;
+	-fx-background-radius: 40px;
+}
+.headingLogin{
+	-fx-font-size: 30px;
+	-fx-font-weight: 900;
+	-fx-text-alignment: center;
+}
+.input{
+	-fx-padding: 10px 5px;
+	-fx-border-radius: 5px;
+	-fx-pref-height: 16px;
+}
+.button {
+  -fx-background-color: #0088ff;
+  -fx-color: white;
+  -fx-padding: 14px 20px;
+  -fx-background-radius: 10px
+}
